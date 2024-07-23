@@ -1,0 +1,166 @@
+
+header {
+    background-color: #c7a28a;
+    color: #fff;
+    padding: 10px 0;
+    font-size: large;
+   
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: #c7a28a;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+main{
+    width: 100%;
+
+
+}
+div.titulo{
+    color:#c7a28a;
+    text-align: center;
+    font-size:larger;
+    background-color:white;
+    height: 60px;
+    
+}
+.flex-container{
+    display:flex;
+    width: 100%;
+    flex-direction:row;
+    flex-wrap: wrap; 
+    margin-top: 0;
+
+}
+
+.caja1{
+    width: 350px;;
+    height: 350px;
+    margin: 5px;
+}
+.caja2{ 
+    width: 350px;
+    height: 350px;
+   margin-left: 50px;
+   margin-top: 50px;
+   
+}
+.caja3{  
+    width: 550px;
+    height: 400px;
+    text-align: center;
+    margin-left: 5px;
+
+}
+.caja4{  
+    width: 558px;
+    height: 400px;
+    margin: 5px;
+}
+.caja5{ 
+    width: 350px;
+    height: 350px;
+    margin: 5px;
+}
+h2{
+    font-style: italic;
+    color:#d4b29b ;
+
+}
+h1,p,ul,h3{
+    color:#766a61
+}
+
+.formulario-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    margin-left: 100 px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color:#766a61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button[type="submit"]:focus {
+    outline: none;
+}
+.fotoc{
+    margin-right: 100px;
+}
+.fotoc2{
+    margin-left: 100px;
+}
+.flexcontainerc{
+    display:flex;
+    width: 100%;
+    flex-direction:row;
+    flex-wrap: wrap; 
+}
