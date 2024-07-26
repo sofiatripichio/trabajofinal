@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloContacto.css">
     <title>Supermercado - Home</title>
-    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
@@ -12,14 +12,14 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <!-- <li><a href="contacto.html">Contacto</a></li> -->
             </ul>
         </nav>
     </header>
     <main>
         <div class="titulo"><h1>Formulario de contacto</h1></div>
 <div class="flexcontainerc">
-     <div class="fotoc"><img src="imagenes/foto 9.jpg" width="400px" height="500px" alt="foto"></div>
+     <div class="fotoc"><img src="imagenes/foto 7.png" width="400px" height="500px" alt="foto"></div>
      <div class="formulario-container">
         <form id="formulario-contacto">
             <div class="form-group">
@@ -32,7 +32,7 @@
             </div>
             <div class="form-group">
                 <label for="telefono">Teléfono de Contacto:</label>
-                <input type="tel" id="telefono" name="telefono" required>
+                <input type="number" id="telefono" name="telefono" required>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
@@ -42,15 +42,15 @@
                 <label for="consulta">Consulta:</label>
                 <textarea id="consulta" name="consulta" rows="4" required></textarea>
             </div>
-            <button type="submit">Guardar Información</button>
+            <button type="submit" id="btnform">Guardar Información</button>
         </form>
     </div>
     <div class="fotoc2"><img src="imagenes/foto 8.jpg" width="400px" height="500px" alt="foto"></div>
 </div>       
-
-
     </main>
-    <footer>
+<footer>
         <p>&copy; Supermercado Sustentable </p>
-    </footer>
+ </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script type="text/javascript" src="./scriptcontacto.js"></script>
 </body>

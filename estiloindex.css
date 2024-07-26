@@ -1,54 +1,47 @@
-
 header {
     background-color: #c7a28a;
     color: #fff;
     padding: 10px 0;
     font-size: large;
-   
+    border-radius: 10px;
 }
-
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
 }
-
 nav ul li {
     margin: 0 15px;
 }
-
-
 nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
-
+ul li a:hover{
+    color: black;
+}
+h1,p,ul,h3{
+    color:#766a61
+}
 footer {
     background-color: #c7a28a;
     color: #fff;
-    text-align: center;
+    font-size: medium;
+    text-align:center;
     width: 100%;
-    height: 40px;
+    height: 38px;
     bottom: 0;
+    border-radius: 5px;
 }
 
-.hidden {
-    visibility: hidden;
-}
-main{
-    width: 100%;
-
-
-}
 div.titulo{
     color:#c7a28a;
     text-align: center;
     font-size:larger;
     background-color:white;
     height: 60px;
-    
 }
 .flex-container{
     display:flex;
@@ -56,9 +49,7 @@ div.titulo{
     flex-direction:row;
     flex-wrap: wrap; 
     margin-top: 0;
-
 }
-
 .caja1{
     width: 350px;;
     height: 350px;
@@ -69,14 +60,12 @@ div.titulo{
     height: 350px;
    margin-left: 50px;
    margin-top: 50px;
-   
 }
 .caja3{  
     width: 550px;
     height: 400px;
     text-align: center;
     margin-left: 5px;
-
 }
 .caja4{  
     width: 558px;
@@ -91,10 +80,6 @@ div.titulo{
 h2{
     font-style: italic;
     color:#d4b29b ;
-
-}
-h1,p,ul,h3{
-    color:#766a61
 }
 
 .formulario-container {
@@ -105,7 +90,6 @@ h1,p,ul,h3{
     width: 400px;
     margin-left: 100 px;
 }
-
 .form-group {
     margin-bottom: 15px;
 }
@@ -115,10 +99,6 @@ label {
     font-weight: bold;
     margin-bottom: 5px;
 }
-
-input[type="text"],
-input[type="tel"],
-input[type="email"],
 textarea {
     width: 100%;
     padding: 8px;
@@ -126,11 +106,9 @@ textarea {
     border: 1px solid #cccccc;
     border-radius: 4px;
 }
-
 textarea {
     resize: vertical;
 }
-
 button[type="submit"] {
     background-color:#766a61;
     color: white;
@@ -144,11 +122,9 @@ button[type="submit"] {
     cursor: pointer;
     border-radius: 4px;
 }
-
 button[type="submit"]:hover {
     background-color: #45a049;
 }
-
 button[type="submit"]:focus {
     outline: none;
 }
@@ -156,7 +132,7 @@ button[type="submit"]:focus {
     margin-right: 100px;
 }
 .fotoc2{
-    margin-left: 100px;
+    margin-left: 0px;
 }
 .flexcontainerc{
     display:flex;
