@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supermercado - Productos</title>
     <link rel="stylesheet" href="estiloproductos.css">
-    <script defer src="scriptproductos.js"></script>
 </head>
 <body>
     <header>
@@ -22,13 +21,14 @@
         <div class="titulo"><h1>Productos</h1></div>
         <section id="productos-lista">
             <div class="contenedorgeneral" id="productos"></div>
-            <button onclick="realizarCompra()">Comprar</button>
-            <div id="resultado"></div>
+            <p id="total">Total de la compra:</p>
+        <button id="comprar">Comprar</button>
         </section>
     </main>
     
     <footer>
         <p>&copy; Supermercado Sustentable</p>
     </footer>
+    <script src="scriptproductos.js" defer></script>
 </body>
 </html>
