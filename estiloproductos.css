@@ -61,7 +61,7 @@ div.titulo{
         background-color:white;
         border: solid #aa988a;
         color:#766a61;
-        padding: 20px;
+        padding: 15px;
         border-radius: 20px;  
 }
 
@@ -71,9 +71,15 @@ div.titulo{
     margin: 0;
     font-weight: bold;
 }
+.productostock {
+    font-size: 0,5rem;
+    margin: 0;
+    font-weight: bold;
+}
 .productodescripcion{
     font-size: 0.5 rem;
 font-style: italic;}
+
 .productoprecio{
     font-size: 0.5 rem;
     font-weight: bold;
