@@ -1,49 +1,97 @@
+/* Header*/
 header {
-    background-color: #c7a28a;
-    color: #fff;
-    padding: 10px 0;
-    font-size: large;
+    background: white;
+    height: 80px;
+    align-items: center;
+    border: #a8998b solid;
     border-radius: 10px;
 }
-nav ul {
-    list-style: none;
-    padding: 0;
+header .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-radius: 10px;
 }
-nav ul li {
-    margin: 0 15px;
+header .logo img {
+    width: 700px;
+    height: 70px;
 }
-nav ul li a {
-    color: #fff;
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 70px;
+}
+header nav ul li {
+    margin: 0 20px;
+    align-items: center;
+}
+header nav ul li a {
+    color: #a8998b;
     text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    font-size: 1.2em;
 }
-ul li a:hover{
-    color: black;
-}
+/* Footer */
 footer {
-    background-color: #c7a28a;
-    color: #fff;
-    font-size: medium;
-    text-align:center;
-    width: 100%;
-    height: 38px;
-    bottom: 0;
-    border-radius: 5px;
-}
-
-
-.titulo{
-    color:#c7a28a;
-    text-align: center;
-    font-size:larger;
-    background-color:white;
+    background: white;
     height: 60px;
+    align-items: center;
+    border: #a8998b solid;
+    border-radius: 10px;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-radius: 10px;
+}
+footer .logo img {
+    width: 200px;
+    height: 20px;
 }
 
-h1,p,ul /*,h3*/{
-    color:#766a61
+footer nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 70px;
 }
+footer nav ul li {
+    margin: 0 20px;
+    align-items: center;
+}
+footer nav ul li a {
+    color: #a8998b;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    font-size: 1.2em;
+}
+/* Contenedor*/
+.flexcontainerc{
+    display:flex;
+    width: 100%;
+    flex-direction:row;
+    flex-wrap: wrap; 
+    margin-bottom: 40px;
+}
+/* Titulo*/
+.titulo{
+    color: #a8998b;
+    text-align: center;
+    font-size: 1.3em;
+    background-color:white;
+    height: 100px;
+    width: 100%;
+}
+/* Contenedor de formulario*/
 .formulario-container {
     background-color: #ffffff;
     border-radius: 8px;
@@ -87,18 +135,10 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #45a049;
 }
-button[type="submit"]:focus {
-    outline: none;
-}
+/* Fotos a los costados*/
 .fotoc{
     margin-right: 100px;
 }
 .fotoc2{
     margin-left: 100px;
-}
-.flexcontainerc{
-    display:flex;
-    width: 100%;
-    flex-direction:row;
-    flex-wrap: wrap; 
 }

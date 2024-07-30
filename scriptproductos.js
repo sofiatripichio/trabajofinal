@@ -24,32 +24,40 @@
 
     const productosDiv = document.getElementById('productos');
 
-    productos.forEach((producto, index) => {
-        const productoDiv = document.createElement('div');
-        productoDiv.className = 'producto';
-        productoDiv.innerHTML = `
-            <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen">
-            <p class="producto-nombre">${producto.nombre}</p>
-            <p class="productodescripcion">${producto.descripcion}</p>
-            <p class="productostock"> Stock: ${producto.stock}  -   Precio: $${producto.precio.toFixed(2)}</p>
-            <label for="cantidad-${index}" class="producto-label">Cantidad:</label><input type="number" id="cantidad-${index}" value="0" min="0" max="${producto.stock}">
-        `;
-        productosDiv.appendChild(productoDiv);
-
-
-    function calcularTotal() {
-        let total = 0;
-        productos.forEach((producto, index) => {
-            const cantidad = document.getElementById(`cantidad-${index}`).value;
-            if (cantidad > 0) {
-                total += producto.precio * cantidad;
-            }
-        });
-        document.getElementById('total').innerText = `Total de la compra $: ${total}`;
-    }
-
-   
-    const botonComprar = document.getElementById('comprar');
-    botonComprar.addEventListener('click', calcularTotal);
+productos.forEach((producto, index) => {
+    const productoDiv = document.createElement('div');
+    productoDiv.className = 'producto';
+    productoDiv.innerHTML = `
+        <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen">
+        <p class="producto-nombre">${producto.nombre}</p>
+        <p class="productodescripcion">${producto.descripcion}</p>
+        <p class="productostock"> Stock: ${producto.stock}  -   Precio: $${producto.precio.toFixed(2)}</p>
+        <label for="cantidad-${index}" class="producto-label">Cantidad:</label>
+        <input type="number" id="cantidad-${index}" value="0" min="0" max="${producto.stock}">
+    `;
+    productosDiv.appendChild(productoDiv);
 });
 
+function calcularTotal() {
+    let total = 0;
+    let error = false;
+    let mensajeError = '';
+
+    productos.forEach((producto, index) => {
+        const cantidadInput = document.getElementById(`cantidad-${index}`);
+        const cantidad = parseInt(cantidadInput.value);
+
+        if (cantidad > producto.stock) {
+            error = true;
+            mensajeError += `No puedes seleccionar más de ${producto.stock} ${producto.nombre}. \n`;
+        } else {
+            total += producto.precio * cantidad;
+        }
+    });
+
+    if (error) {
+        alert(mensajeError.trim());
+    } else {
+        document.getElementById('total').innerText = `Total de la compra $: ${total.toFixed(2)}`;
+    }
+}
