@@ -21,43 +21,54 @@
         { nombre: "Queso Gouda", precio: 16000, stock: 9, imagen: 'imagenes/gouda.jpg', descripcion: "Descripción: Queso Gouda de granja casero, vacas libres por 1 kg" },
         { nombre: "Queso Sardo", precio: 12000, stock: 10, imagen: 'imagenes/sardo.jpg', descripcion: "Descripción: Queso Sardo de granja casero, vacas libres por 1 kg" }
     ];
+ /* se define una arreglo: productos que contiene una lista de productos con sus propiedades: precio, stock, nombre, descripción*/
+    
+ const productosDiv = document.getElementById('productos');
+     /* declara la variable productosDiv que almacenara el eleemnto de HTML com Id "productos" */
 
-    const productosDiv = document.getElementById('productos');
-
-productos.forEach((producto, index) => {
-    const productoDiv = document.createElement('div');
-    productoDiv.className = 'producto';
+productos.forEach((producto, index) => {   /* for.Each es un metodo que ejecuta una funcion para cada elemeto del arreglo usa el prodcuto y
+    el index: la posición dentro del arreglo */
+    const productoDiv = document.createElement('div');  /* defininimos productoDiv  para almacenar un elemento (que no esta en html) llamado div*/
+    productoDiv.className = 'producto'; /* le permite tener una clase  a los div sin estar en html*/
     productoDiv.innerHTML = `
         <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen">
         <p class="producto-nombre">${producto.nombre}</p>
         <p class="productodescripcion">${producto.descripcion}</p>
         <p class="productostock"> Stock: ${producto.stock}  -   Precio: $${producto.precio.toFixed(2)}</p>
         <label for="cantidad-${index}" class="producto-label">Cantidad:</label>
-        <input type="number" id="cantidad-${index}" value="0" min="0" max="${producto.stock}">
-    `;
-    productosDiv.appendChild(productoDiv);
+        <input type="number" id="cantidad-${index}" value="0" min="0">
+       
+    `; /* le damos contenido nuevo div como contenido HTML, la comilla(`) permite incluir varibles como una plantilla de cadena, 
+    agregamos la imagen de cada prodcuto , asignamos lo "p" que iran en cada div y le damos una clase a cada uno ,
+    dentro de cada ${} se agregan los valores del arreglo, en el input de cantidad se agrega un valor 0 de base y 0 de minimo*/
+    productosDiv.appendChild(productoDiv); 
+    /* usamos el metodo appenchild para agregar un hijo (productosDiv (que contiene la informacion sobre prodcutos), al padre productoDiv 
+    para agregarlo dentro de el*/
 });
 
 function calcularTotal() {
-    let total = 0;
-    let error = false;
-    let mensajeError = '';
+    let total = 0;   /* definimos total y lo inicializamos en 0 */
+    let error = false; /* definimos error como FALSE*/
+    let mensajeError = ''; /* definimos el mensaje de error sin texto aun*/
 
-    productos.forEach((producto, index) => {
-        const cantidadInput = document.getElementById(`cantidad-${index}`);
-        const cantidad = parseInt(cantidadInput.value);
+    productos.forEach((producto, index) => { /*  de nuevo usamos for.Each para ejecutar funcion para cada elemeto del arreglo*/
+        const cantidadInput = document.getElementById(`cantidad-${index}`);/* definimos cantidadInput como la cantidad seleccionada por el usuario */
+        const cantidad = parseInt(cantidadInput.value); /* definimos cantidad como el numero entero (usando perseiNT) de la cantidad ingresada por el usuario */
 
         if (cantidad > producto.stock) {
-            error = true;
-            mensajeError += `No puedes seleccionar más de ${producto.stock} ${producto.nombre}. \n`;
+            error = true;  /* Si la cantidad es mayor al stock la variable error pasara a true y se ejecutara el mensaje error*/
+            mensajeError += `No puedes seleccionar más de ${producto.stock} ${producto.nombre}. \n`; 
+            /* Si la cantidad es mayor al stock se le agrega texto a mensajeError para indicarle que no puede seleccionar mas de X cantidad 
+            de X prodcutos, \n` es un salto de línea por si eligió mayor cantidad disponible al stock en mas de un producto  */
         } else {
-            total += producto.precio * cantidad;
+            total += producto.precio * cantidad; /* si no, el total pasara a ser el precio del producto por cantidad */
         }
     });
 
     if (error) {
-        alert(mensajeError.trim());
+        alert(mensajeError.trim());  /* Si error es True , se ejecuta un mensaje de tipo alert con el mensaje error, 
+        el .trim elimina los espacios al principio y final de la cadena de texto*/
     } else {
-        document.getElementById('total').innerText = `Total de la compra $: ${total.toFixed(2)}`;
-    }
+        document.getElementById('total').innerText = `Total de la compra $: ${total}`;
+    }   /* si no al elemento total (buscado por el ID en html) se lo mofica agregarndo el total */
 }

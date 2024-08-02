@@ -57,7 +57,7 @@ footer .logo img {
 }
 
 footer nav ul {
-    list-style: none;
+    list-style: none; /* sin marcadores de la lista*/
     display: flex;
     align-items: center;
     width: 700px;
@@ -108,10 +108,10 @@ footer nav ul li a {
 .principios {
     max-width: 1200px; /* Ancho máximo del contenedor ajustado */
     margin: 0 auto; /* Centra el contenedor */
-    background-color: #ffffff; /* Fondo blanco */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    padding: 20px; /* Relleno interno */
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra 0 de deplazamiento horizontal, 4 de vertical 8 de difuminacion */
+    padding: 20px; 
     display: flex;
     flex-wrap: wrap; /* Permite ajustar los elementos en varias filas */
     gap: 20px; /* Espacio entre los elementos */
@@ -130,23 +130,27 @@ footer nav ul li a {
     background: #f9f9f9; /* Fondo gris claro para los ítems */
     border-radius: 8px;
     padding: 10px; 
-    flex: 1 1 calc(50% - 20px); /* Ancho en dos columnas con espacio entre ellas */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    box-sizing: border-box; /* Incluye relleno y borde en el ancho total */
+    flex: 1 1 calc(50% - 20px); /* [flex-grow](crecer en relación con otros elementos flexibles cuando hay espacio adicional.
+     [flex-shrink] para decrecer en relación con otros elementos flexibles cuando el espacio es insuficiente. 
+     Todos los elementon: 1, crecerán y decreceran por igual si hay mas o menos espacio .
+     [flex-basis]Define el tamaño base del elemento antes de aplicar el crecimiento o la reducción
+      El tamaño inicial del elemento es la mitad del ancho del contenedor(50%) menos 20 píxeles para dejar margen;*/
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box; /* border-box :Incluye relleno y borde en el ancho total del elemento */
 }
 
 .principio-item:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .principio-titulo {
     font-size: 1.1em; /* Tamaño de fuente del título */
-    color: #9b8d7f; /* Color oscuro */
+    color: #9b8d7f; 
 }
 
 .principio-descripcion {
-    font-size: 0.9em; /* Tamaño de fuente de la descripción */
-    color: #83776b; /* Color gris claro */
+    font-size: 0.9em;
+    color: #83776b; 
     line-height: 1.6; /* Espaciado entre líneas */
 }
 
@@ -164,20 +168,20 @@ footer nav ul li a {
     position: absolute;
     width: 100%;
     height: 95%;
-    z-index: -1; /* hace que la foto quede en el fondo */
+    z-index: -1; /* hace que la foto quede de fondo */
 }
 .fotohistoria img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta la foto para cubrir todo el contenedor */
+    object-fit: cover; /* la foto cubre todo el contenedor */
 }
 h1{
   text-align: center;
   font-size: 2em;
   color:white ; 
-  margin-bottom: 5px; /* Espacio debajo del título */
+  margin-bottom: 5px;
   font-weight: bold;
-  width: 100%; /* Asegura que el título ocupe toda la fila */
+  width: 100%;
 }
 .historia {
     background: #516d5c; 
@@ -191,12 +195,12 @@ h1{
 }
 
 .historia:hover {
-    transform: translateY(-2px); /* Eleva */
+    transform: translateY(-2px); /* mueve en el eje y (vertical), signo negativo mueve hacia arriba */
 }
 
 .historia-descripcion {
     font-size: 1em; 
     color: white; 
-    line-height: 1.6; /* Espaciado entre líneas */
+    line-height: 1.6;
     margin-left: 10px;
 }

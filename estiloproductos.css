@@ -74,7 +74,7 @@ footer nav ul li a {
     align-items: center;
     font-size: 1.2em;
 }
-
+/* Titulo */
 .titulo{
     color: #a8998b;
     font-size: 1.3em;
@@ -92,7 +92,7 @@ footer nav ul li a {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-/* Estilos para el contenedor de productos */
+/* Contenedor de productos */
 .producto {justify-content: space-evenly;
         text-align: center;
         margin: 10px;
@@ -105,7 +105,6 @@ footer nav ul li a {
         border-radius: 20px;  
 }
 
-/* Estilos para el nombre del producto */
 .producto-nombre {
     font-size: 1.2rem;
     margin: 0;
@@ -125,13 +124,10 @@ font-style: italic;}
     font-weight: bold;
 }
     
-/* Estilos para las etiquetas de cantidad */
 .producto-label {
     margin-top: 0.5rem;
     display: block;
 }
-
-/* Estilos para los inputs de cantidad */
 .producto-input {
     margin-bottom: 1rem;
     padding: 0.5rem;
@@ -146,6 +142,17 @@ font-style: italic;}
 .producto-imagen:hover{
     transform: scale(1.1);
 }
+/* Contenedor final */ 
+.contenedorfinal{
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 /* boton */ 
 button {
     background-color:#766a61;
@@ -162,15 +169,7 @@ button {
 button:hover {
     background-color: #45a049;
 }
-.contenedorfinal{
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+ 
 .total{
     color: #766a61;
     font-size: 1.2em;
