@@ -4,7 +4,7 @@
         { nombre: "Limpiador Multiuso", precio: 3500, stock: 20, imagen: "imagenes/limpiador.jpg", descripcion: "Descripción: Limpiador multiuso ecológico" },
         { nombre: "Dentífrico", precio: 5000, stock: 30, imagen: 'imagenes/dentifrico.jpg', descripcion: "Descripción: Dentrífico sólido en frasco ecológico Amarkuy" },
         { nombre: "Botella", precio: 15000, stock: 15, imagen: 'imagenes/boteella.jpg', descripcion: "Descripción: Botella de vidrio y bambú Sensorial" },
-        { nombre: "Cepillo de dientes Bambu", precio: 7, stock: 75, imagen: 'imagenes/cepillodedientes.jpg', descripcion: "Descripción: Cepillo de dientes ecológico BioBrushS" },
+        { nombre: "Cepillo de dientes Bambu", precio: 7, stock: 30, imagen: 'imagenes/cepillodedientes.jpg', descripcion: "Descripción: Cepillo de dientes ecológico BioBrushS" },
         { nombre: "Mermelada", precio: 4000, stock: 16, imagen: 'imagenes/mermelada.jpg', descripcion: "Descripción: Mermelada casera de Frambuesa 500 g Delifrut" },
         { nombre: "Jugo de pera", precio: 1500, stock: 20, imagen: 'imagenes/jugo.jpg', descripcion: "Descripción: Jugo de pera natural 300ml" },
         { nombre: "Aceite Chia", precio: 6000, stock: 8, imagen: 'imagenes/aceite.jpg', descripcion: "Descripción: Aceite de chia 250ml" },
