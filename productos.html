@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minumum-scale:1.0">
     <title>Biomarket - Productos</title>
     <link rel="stylesheet" href="estiloproductos.css">
 </head>
@@ -23,13 +23,13 @@
     </header> 
     
 <main>
-        <div class="titulo"><h1>Productos</h1></div>
-        <section id="productos-lista">
+<h1 class="titulo">Productos</h1>
+        <div id="productos-lista">
             <div class="contenedorgeneral" id="productos"></div>
-            <div class="contenedorfinal"><button onclick="calcularTotal()">Calcular Total</button>
+            <div class="contenedorfinal"><button id="compra">Calcular Total</button>
                 <p class="total" id="total">Total de la compra $: 0</p>
             </div>
-        </section>
+        </div>
 </main>
     
     <footer>

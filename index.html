@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minumum-scale:1.0">
     <title>Biomarket - Home</title>
-    <link rel="stylesheet" href="./estiloIndex.css">
+    <link rel="stylesheet" href="./estiloindex.css">
 </head>
+<div class="contenedorglobal"></div>
 <body>
     <header>
         <div class="container">
@@ -23,12 +24,12 @@
     </header>    
     <main>
 <div class="flex-container">
-        <div class="flex-container">
-          <div class="caja1"><img src="imagenes/foto 5.png" width="400px" height="350px" alt="foto"></div>
-          <div class="caja3"><img src="imagenes/foto11.png" width="400px" height="350px" alt="foto"></div>
-          <div class="caja2"><img src="imagenes/foto 6.png" width="400px" height="350px" alt="foto"></div>
+        <div class="container1">
+          <div class="caja1"><img class="imagen" src="imagenes/foto 5.png"  alt="foto Supermercado"></div>
+          <div class="caja3"><img class="imagen"src="imagenes/foto11.png" alt="foto"></div>
+          <div class="caja2"><img class="imagen" src="imagenes/foto 6.png" alt="foto supermercado"></div>
         </div>
-        <div class="caja4">
+        <div class="container2">
                 <div class="principios">
                     <h2 class="titulo">Nuestros Principios</h2>
                     <div class="principio-item">
@@ -49,18 +50,14 @@
                     </div>
                 </div>
         </div>
-        <div class="contenedorhistoria">
-            <div class="fotohistoria">
-                <img
-                 src="imagenes/fondo hitoria.avif" alt="verduras">
-                </img>
-              </div>
-              <h1>Nuestra Historia</h2>
-                <div class="historia">
-                    <p class="historia-descripcion">Supermercado sustentable nace en 2022 en la ciudad de Olavarría a partir de un grupo de soñadores que buscaron comprometerse con la sostenibilidad ambiental y social en todas sus operaciones. Nos dedicamos a ofrecer productos frescos y alimentos de alta calidad, al mismo tiempo que promovemos prácticas responsables que benefician tanto a nuestros clientes como al planeta. Esperamos dar el ejemplo, y que se expandan los comercios sustentables.</p>
-                </div>
-        
+        <div class="container3">
+        <img class="imagenverduras" src="imagenes/fondo hitoria.avif" alt="verduras"></img>
             
+             <div class="historia">
+                    <h1>Nuestra Historia</h2>
+                    <p class="historia-descripcion">Supermercado sustentable nace en 2022 en la ciudad de Olavarría a partir de un grupo de soñadores que buscaron comprometerse con la sostenibilidad ambiental y social en todas sus operaciones. Nos dedicamos a ofrecer productos frescos y alimentos de alta calidad, al mismo tiempo que promovemos prácticas responsables que benefician tanto a nuestros clientes como al planeta. Esperamos dar el ejemplo, y que se expandan los comercios sustentables.</p>
+             </div>
+        
         </div>
 </div>
     </main>
@@ -79,4 +76,5 @@
     </footer>
     <script type="text/javascript" src="./scriptHome.js"></script>
 </body>
+</div>
 </html>
